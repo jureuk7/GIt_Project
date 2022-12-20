@@ -6,9 +6,60 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
-    return 0;
+    srand(time(NULL));
+    int step = 1;
+    while(step < 11) {
+        int type = rand() % 4;
+        int num,num2,result,inp;
+        switch(type) {
+            case 0:
+                num = rand() % 10;
+                num2 = rand() % 10;
+                result = num + num2;
+                inp;
+                printf("[%d/10] %d + %d = ",step,num,num2);
+                scanf("%d",&inp);
+                if(inp == result) {
+                    step++;
+                }
+                break;
+            case 1:
+                num = rand() % 10;
+                num2 = rand() % 10;
+                result = num + num2;
+                inp;
+                printf("[%d/10] %d + %d = ",step,num,num2);
+                scanf("%d",&inp);
+                if(inp == result) {
+                    step++;
+                }
+                break;
+            case 2:
+                num = rand() % 10;
+                num2 = rand() % 10;
+                result = num + num2;
+                inp;
+                printf("[%d/10] %d + %d = ",step,num,num2);
+                scanf("%d",&inp);
+                if(inp == result) {
+                    step++;
+                }
+                break;
+            case 3:
+                num = rand() % 10;
+                num2 = rand() % 10;
+                result = num + num2;
+                inp;
+                printf("[%d/10] %d + %d = ",step,num,num2);
+                scanf("%d",&inp);
+                if(inp == result) {
+                    step++;
+                }
+                break;
+        }
+    }
 }
