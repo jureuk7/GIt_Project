@@ -21,43 +21,55 @@ int main(int argc, const char * argv[]) {
                 num2 = rand() % 10;
                 result = num + num2;
                 inp;
-                printf("[%d/10] %d + %d = ",step,num,num2);
+                printf("\n[%d/10] %d + %d = ",step,num,num2);
                 scanf("%d",&inp);
                 if(inp == result) {
+                    printf("Correct!");
                     step++;
+                } else {
+                    printf("Wrong! Answer is %d",result);
                 }
                 break;
             case 1:
                 num = rand() % 10;
                 num2 = rand() % 10;
-                result = num + num2;
+                result = num - num2;
                 inp;
-                printf("[%d/10] %d + %d = ",step,num,num2);
+                printf("\n[%d/10] %d - %d = ",step,num,num2);
                 scanf("%d",&inp);
                 if(inp == result) {
+                    printf("Correct!");
                     step++;
+                } else {
+                    printf("Wrong! Answer is %d",result);
                 }
                 break;
             case 2:
                 num = rand() % 10;
                 num2 = rand() % 10;
-                result = num + num2;
+                result = num * num2;
                 inp;
-                printf("[%d/10] %d + %d = ",step,num,num2);
+                printf("\n[%d/10] %d * %d = ",step,num,num2);
                 scanf("%d",&inp);
                 if(inp == result) {
+                    printf("Correct!");
                     step++;
+                } else {
+                    printf("Wrong! Answer is %d",result);
                 }
                 break;
             case 3:
                 num = rand() % 10;
                 num2 = rand() % 10;
-                result = num + num2;
+                result = num / num2;
                 inp;
-                printf("[%d/10] %d + %d = ",step,num,num2);
+                printf("\n[%d/10] %d / %d = ",step,num,num2);
                 scanf("%d",&inp);
                 if(inp == result) {
+                    printf("Correct!");
                     step++;
+                } else {
+                    printf("Wrong! Answer is %d",result);
                 }
                 break;
         }
