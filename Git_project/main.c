@@ -74,4 +74,6 @@ int main(int argc, const char * argv[]) {
                 break;
         }
     }
+    printf("Game Over ! You Won!");
+    return 0;
 }
